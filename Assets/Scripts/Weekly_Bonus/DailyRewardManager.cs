@@ -17,6 +17,7 @@ namespace Weekly_Bonus
 
         private void Awake()
         {
+            _panelWeeklyBonus.SetActive(true);
             _sliderBarDay.SetMaxDay(_maxDay);
         }
 
@@ -24,16 +25,16 @@ namespace Weekly_Bonus
         {
             LoadData();
 
-            if (_currentDay > 7)
+            if (_currentDay > 6)
             {
                 ResetData();
             }
 
             UpdateRewardButtons();
             _sliderBarDay.SetBarDay(_currentDay);
-            _textCurrentDay.text = _currentDay.ToString();
 
-            if (_currentDay > 6)
+
+            if (_currentDay > 5)
             {
                 _panelWeeklyBonus.SetActive(false);
                 _panelDailyBonus.SetActive(true);
@@ -41,6 +42,7 @@ namespace Weekly_Bonus
 
 
             Debug.Log($"Current_Day: {_currentDay}");
+            _textCurrentDay.text = (_currentDay + 1).ToString();
         }
 
         private void UpdateRewardButtons()
