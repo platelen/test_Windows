@@ -254,9 +254,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 559752034}
+  - component: {fileID: 559752036}
   - component: {fileID: 559752035}
   m_Layer: 0
-  m_Name: Shop_Manager
+  m_Name: Shop_Controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -286,10 +287,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 559752033}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1d93b45934e484da76ea1f9a335031b, type: 3}
+  m_Script: {fileID: 11500000, guid: 63effc4fdb456a3479d3367b9bc1232f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  productID: 
+--- !u!114 &559752036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 559752033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d49bacddc1861f4c82b7dff17935ee1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1290179929
 GameObject:
   m_ObjectHideFlags: 0

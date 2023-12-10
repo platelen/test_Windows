@@ -1,15 +1,15 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace Shop
+namespace Shop.IAP
 {
     public class ShopButton : MonoBehaviour
     {
-        private ShopController iapManager;
+        private ShopIAPController iapManager;
 
         private void Start()
         {
-            iapManager = GetComponent<ShopController>();
+            iapManager = GetComponent<ShopIAPController>();
 
             Button button = GetComponent<Button>();
             button.onClick.AddListener(OnClick);

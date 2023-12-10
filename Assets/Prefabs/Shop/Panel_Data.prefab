@@ -1121,6 +1121,7 @@ GameObject:
   - component: {fileID: 7220837057307310311}
   - component: {fileID: 3307939478707234413}
   - component: {fileID: 3936301611334159110}
+  - component: {fileID: 2510973750063315936}
   m_Layer: 5
   m_Name: Text_Price
   m_TagString: Untagged
@@ -1244,6 +1245,19 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &2510973750063315936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6860933024424328201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99a4b43cba7e44e58db8d89231b289d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _itemSo: {fileID: 0}
 --- !u!1 &7156250138466907092
 GameObject:
   m_ObjectHideFlags: 0
