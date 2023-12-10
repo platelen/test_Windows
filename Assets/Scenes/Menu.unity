@@ -402,6 +402,10 @@ PrefabInstance:
       propertyPath: m_text
       value: LV.1
       objectReference: {fileID: 0}
+    - target: {fileID: 1413244377644785114, guid: 4dfcdcbe076949c479bf28e086b02c0c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2024376670991604099, guid: 4dfcdcbe076949c479bf28e086b02c0c, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -558,6 +562,14 @@ PrefabInstance:
       propertyPath: _bankTicketsPlayer
       value: 
       objectReference: {fileID: 830025736}
+    - target: {fileID: 4058875579480329024, guid: 4dfcdcbe076949c479bf28e086b02c0c, type: 3}
+      propertyPath: _soLevelNumberCompleted
+      value: 
+      objectReference: {fileID: 11400000, guid: 640b30ace26d39746a9b0823f4d2aed7, type: 2}
+    - target: {fileID: 4074706070975488988, guid: 4dfcdcbe076949c479bf28e086b02c0c, type: 3}
+      propertyPath: _soLevelNumberCompleted
+      value: 
+      objectReference: {fileID: 11400000, guid: 2c92545ca58d4084c8e80374db3cdbae, type: 2}
     - target: {fileID: 4122332138571131439, guid: 4dfcdcbe076949c479bf28e086b02c0c, type: 3}
       propertyPath: m_AnchorMax.y
       value: 1
@@ -582,6 +594,14 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -38.86405
       objectReference: {fileID: 0}
+    - target: {fileID: 4189448859243543561, guid: 4dfcdcbe076949c479bf28e086b02c0c, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4771801698780321593, guid: 4dfcdcbe076949c479bf28e086b02c0c, type: 3}
+      propertyPath: _soLevelNumberCompleted
+      value: 
+      objectReference: {fileID: 11400000, guid: 1f723df77c2d6cd418708e34006131ca, type: 2}
     - target: {fileID: 4782383151426667308, guid: 4dfcdcbe076949c479bf28e086b02c0c, type: 3}
       propertyPath: _itemSo
       value: 
@@ -637,6 +657,10 @@ PrefabInstance:
     - target: {fileID: 6131829271751783007, guid: 4dfcdcbe076949c479bf28e086b02c0c, type: 3}
       propertyPath: m_text
       value: LV.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6179189912209365699, guid: 4dfcdcbe076949c479bf28e086b02c0c, type: 3}
+      propertyPath: m_text
+      value: LV.4
       objectReference: {fileID: 0}
     - target: {fileID: 6260085663559224151, guid: 4dfcdcbe076949c479bf28e086b02c0c, type: 3}
       propertyPath: m_Color.a
@@ -734,11 +758,16 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 6736630f15551774cbe902ad1323c40b, type: 3}
+    - target: {fileID: 9159452667700567842, guid: 4dfcdcbe076949c479bf28e086b02c0c, type: 3}
+      propertyPath: _soLevelNumberCompleted
+      value: 
+      objectReference: {fileID: 11400000, guid: 1eb983291e391d442b69fcd4dd223553, type: 2}
     - target: {fileID: 9185726766914358071, guid: 4dfcdcbe076949c479bf28e086b02c0c, type: 3}
       propertyPath: _itemSo
       value: 
       objectReference: {fileID: 11400000, guid: 475a999509f99a84fba24dd548a00d55, type: 2}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 850808508964089069, guid: 4dfcdcbe076949c479bf28e086b02c0c, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -1484,6 +1513,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8238037613872419053}
     m_Modifications:
+    - target: {fileID: 1250191076055521741, guid: 40cc9754b9fe9ca4f9833e282425bea6, type: 3}
+      propertyPath: _soLevelNumberCompleted
+      value: 
+      objectReference: {fileID: 11400000, guid: 2c92545ca58d4084c8e80374db3cdbae, type: 2}
     - target: {fileID: 1285723550390014274, guid: 40cc9754b9fe9ca4f9833e282425bea6, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1572,6 +1605,14 @@ PrefabInstance:
       propertyPath: _panelMenuView
       value: 
       objectReference: {fileID: 859121342}
+    - target: {fileID: 2003027081901435016, guid: 40cc9754b9fe9ca4f9833e282425bea6, type: 3}
+      propertyPath: _soLevelNumberCompleted
+      value: 
+      objectReference: {fileID: 11400000, guid: 640b30ace26d39746a9b0823f4d2aed7, type: 2}
+    - target: {fileID: 2300870091196331853, guid: 40cc9754b9fe9ca4f9833e282425bea6, type: 3}
+      propertyPath: _soLevelNumberCompleted
+      value: 
+      objectReference: {fileID: 11400000, guid: 1f723df77c2d6cd418708e34006131ca, type: 2}
     - target: {fileID: 2854447162710736903, guid: 40cc9754b9fe9ca4f9833e282425bea6, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -1620,6 +1661,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6305648603300879083, guid: 40cc9754b9fe9ca4f9833e282425bea6, type: 3}
+      propertyPath: _soLevelNumberCompleted
+      value: 
+      objectReference: {fileID: 11400000, guid: 1eb983291e391d442b69fcd4dd223553, type: 2}
     - target: {fileID: 7057458431085307461, guid: 40cc9754b9fe9ca4f9833e282425bea6, type: 3}
       propertyPath: _panelMenuView
       value: 
@@ -1651,6 +1696,10 @@ PrefabInstance:
     - target: {fileID: 9077913155554388806, guid: 40cc9754b9fe9ca4f9833e282425bea6, type: 3}
       propertyPath: m_Name
       value: Panel_Scroll_Area
+      objectReference: {fileID: 0}
+    - target: {fileID: 9077913155554388806, guid: 40cc9754b9fe9ca4f9833e282425bea6, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
