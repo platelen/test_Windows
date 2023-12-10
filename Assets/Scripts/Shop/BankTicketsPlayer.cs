@@ -6,6 +6,11 @@ namespace Shop
     {
         [SerializeField] private float _bankTicketsPlayer = 10000;
 
-        public float TicketsPlayer => _bankTicketsPlayer;
+
+        public float TicketsPlayer
+        {
+            get => _bankTicketsPlayer;
+            set => _bankTicketsPlayer = value;
+        }
     }
 }
