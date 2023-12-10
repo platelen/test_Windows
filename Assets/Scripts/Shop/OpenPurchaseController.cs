@@ -1,5 +1,4 @@
 using Road_Levels;
-using SOLevelCompleted;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -7,10 +6,16 @@ namespace Shop
 {
     public class OpenPurchaseController : MonoBehaviour
     {
-        [SerializeField] private SoLevelNumberCompleted _soLevelNumberCompleted;
         [SerializeField] private Button _buttonPurchase;
         [SerializeField] private GameObject _panelIcon;
-        public int completedLevel = -1;
+        [SerializeField] private int _completedLevel = -1;
+        [SerializeField] private int _setCompletedLevel;
+
+        public GameObject PanelIcon
+        {
+            get => _panelIcon;
+            set => _panelIcon = value;
+        }
 
         private void Start()
         {
@@ -20,13 +25,16 @@ namespace Shop
 
         private void CheckProgress(int levelIndex)
         {
-            if (levelIndex == 3) // предположим, что нам нужно активировать GameObject при пройденном третьем уровне
+            if (levelIndex ==
+                _setCompletedLevel) // предположим, что нам нужно активировать GameObject при пройденном третьем уровне
             {
-                completedLevel = levelIndex; // помечаем, что третий уровень пройден
-                if (completedLevel == 3)
+                _completedLevel = levelIndex; // помечаем, что третий уровень пройден
+                if (_completedLevel == _setCompletedLevel)
                 {
                     Debug.Log(
-                        $"Пройден уровен: {completedLevel}"); // активируем GameObject, если третий уровень пройден
+                        $"Пройден уровен: {_completedLevel}"); // активируем GameObject, если третий уровень пройден
+                    _panelIcon.SetActive(false);
+                    _buttonPurchase.interactable = true;
                 }
             }
             // Здесь вы можете добавить другие проверки для других уровней
