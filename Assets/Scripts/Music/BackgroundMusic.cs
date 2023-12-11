@@ -1,18 +1,45 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class BackgroundMusic : MonoBehaviour
+namespace Music
 {
-    // Start is called before the first frame update
-    void Start()
+    public class BackgroundMusic : MonoBehaviour
     {
-        
-    }
+        public AudioSource _audioSource;
+        private bool _isMuted;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        private void Start()
+        {
+            _audioSource = GetComponent<AudioSource>();
+            _isMuted = PlayerPrefs.GetInt("IsMuted", 0) == 1;
+
+            UpdateAudioState();
+        }
+
+        private void UpdateAudioState()
+        {
+            _audioSource.mute = _isMuted;
+            PlayerPrefs.SetInt("IsMuted", _isMuted ? 1 : 0);
+        }
+
+        public void ToggleMute()
+        {
+            _isMuted = !_isMuted;
+            if (_isMuted)
+            {
+                _audioSource.volume = 0f;
+            }
+            else
+            {
+                _audioSource.volume = 1f;
+            }
+            UpdateAudioState();
+        }
+
+        public void IncreaseVolume(float amount)
+        {
+            _isMuted = false;
+            _audioSource.volume += amount;
+            UpdateAudioState();
+        }
     }
 }
