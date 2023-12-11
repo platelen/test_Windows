@@ -7,6 +7,8 @@ namespace Road_Levels
     {
         [SerializeField] private GameObject _panelRoadLevel;
         [SerializeField] private GameObject _panelMenuView;
+        [SerializeField] private GameObject[] _panelsShop;
+
 
         private Button _buttonBackToMenu;
 
@@ -19,6 +21,10 @@ namespace Road_Levels
         private void BackToMenu()
         {
             _panelRoadLevel.SetActive(false);
+            foreach (GameObject panel in _panelsShop)
+            {
+                panel.SetActive(false);
+            }
             _panelMenuView.SetActive(true);
         }
 

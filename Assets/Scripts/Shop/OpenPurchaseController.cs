@@ -26,20 +26,20 @@ namespace Shop
         private void CheckProgress(int levelIndex)
         {
             if (levelIndex ==
-                _setCompletedLevel) // предположим, что нам нужно активировать GameObject при пройденном третьем уровне
+                _setCompletedLevel)
             {
-                _completedLevel = levelIndex; // помечаем, что третий уровень пройден
+                _completedLevel = levelIndex;
                 if (_completedLevel == _setCompletedLevel)
                 {
                     Debug.Log(
-                        $"Пройден уровен: {_completedLevel}"); // активируем GameObject, если третий уровень пройден
+                        $"Пройден уровен: {_completedLevel}");
                     _panelIcon.SetActive(false);
                     _buttonPurchase.interactable = true;
                 }
             }
-            // Здесь вы можете добавить другие проверки для других уровней
         }
 
+        
         private void OnDestroy()
         {
             LevelsController.OnLevelClicked -= CheckProgress;
