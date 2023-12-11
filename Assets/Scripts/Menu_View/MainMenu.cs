@@ -7,14 +7,17 @@ namespace Menu_View
 {
     public class MainMenu : MonoBehaviour
     {
-        [Header("Bank")] [SerializeField] private BankTicketsPlayer _bankTicketsPlayer;
+        [Header("Bank")] 
+        [SerializeField] private BankTicketsPlayer _bankTicketsPlayer;
         [SerializeField] private TextMeshProUGUI _textBankTickets;
-        [Header("Buttons")] [SerializeField] private Button _buttonStartLevels;
+        [Header("Buttons")]
+        [SerializeField] private Button _buttonStartLevels;
         [SerializeField] private Button _buttonSettings;
         [SerializeField] private Button _buttonShop;
         [SerializeField] private Button _buttonWeekly;
-        [Header("Panels")] [SerializeField] private GameObject _panelLevels;
-        [SerializeField] private GameObject _panelSettings;
+        [Header("Panels")] 
+        [SerializeField] private GameObject _panelLevels;
+        [SerializeField] private GameObject[] _panelsSettings;
         [SerializeField] private GameObject _panelWeekly;
         [SerializeField] private GameObject[] _panelsShop;
         [SerializeField] private GameObject _panelShop;
@@ -59,7 +62,11 @@ namespace Menu_View
 
         private void OpenSetting()
         {
-            _panelSettings.SetActive(true);
+            foreach (GameObject panels in _panelsSettings)
+            {
+                panels.SetActive(true);
+            }
+
             gameObject.SetActive(false);
         }
 
@@ -71,7 +78,7 @@ namespace Menu_View
 
         private void OpenShop()
         {
-            _panelShop.SetActive(true); 
+            _panelShop.SetActive(true);
             gameObject.SetActive(false);
         }
     }

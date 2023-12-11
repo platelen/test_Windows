@@ -8,6 +8,7 @@ namespace Settings
     {
         [SerializeField] private BackgroundMusic _backgroundMusic;
         [SerializeField] private GameObject _panelMenu;
+        [SerializeField] private GameObject[] _panelsSetting;
         [SerializeField] private Button _buttonHome;
         [SerializeField] private Button _buttonMusic;
         [SerializeField] private Button _buttonSpeaker;
@@ -30,7 +31,10 @@ namespace Settings
         private void BackToMenu()
         {
             _panelMenu.SetActive(true);
-            gameObject.SetActive(false);
+            foreach (GameObject panels in _panelsSetting)
+            {
+                panels.SetActive(false);
+            }
         }
 
         public void ToggleMuteButton()
