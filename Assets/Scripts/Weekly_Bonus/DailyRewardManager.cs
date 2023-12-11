@@ -51,8 +51,6 @@ namespace Weekly_Bonus
                 }
             }
 
-
-            Debug.Log($"Current_Day: {_currentDay}");
             _textCurrentDay.text = (_currentDay + 1).ToString();
         }
 
