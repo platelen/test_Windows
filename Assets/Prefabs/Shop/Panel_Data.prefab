@@ -1041,6 +1041,7 @@ GameObject:
   - component: {fileID: 3270042366606745900}
   - component: {fileID: 6958510024226155643}
   - component: {fileID: 7930772517927457978}
+  - component: {fileID: 2277234666233194478}
   m_Layer: 5
   m_Name: Panel_Data
   m_TagString: Untagged
@@ -1110,6 +1111,21 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2277234666233194478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6519132696596180977}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2255ce2a7b3748089ab64d950562c25b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _soLevelNumberCompleted: {fileID: 0}
+  _buttonPurchase: {fileID: 7387419592331931963}
+  _panelIcon: {fileID: 3770220212032631156}
 --- !u!1 &6860933024424328201
 GameObject:
   m_ObjectHideFlags: 0
@@ -1121,6 +1137,7 @@ GameObject:
   - component: {fileID: 7220837057307310311}
   - component: {fileID: 3307939478707234413}
   - component: {fileID: 3936301611334159110}
+  - component: {fileID: 2510973750063315936}
   m_Layer: 5
   m_Name: Text_Price
   m_TagString: Untagged
@@ -1244,6 +1261,19 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &2510973750063315936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6860933024424328201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99a4b43cba7e44e58db8d89231b289d0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _itemSo: {fileID: 0}
 --- !u!1 &7156250138466907092
 GameObject:
   m_ObjectHideFlags: 0
@@ -1557,6 +1587,7 @@ GameObject:
   - component: {fileID: 4132416718749312774}
   - component: {fileID: 1887559767421344483}
   - component: {fileID: 7387419592331931963}
+  - component: {fileID: 1228521946916715961}
   m_Layer: 5
   m_Name: Button_Price
   m_TagString: Untagged
@@ -1665,3 +1696,20 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &1228521946916715961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7951142125707793330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67c89541d554458d87ffa4dbb5a44a54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _bankTicketsPlayer: {fileID: 0}
+  _itemSo: {fileID: 0}
+  _panelTextPrice: {fileID: 0}
+  _panelTicket: {fileID: 0}
+  _panelCheckMark: {fileID: 0}

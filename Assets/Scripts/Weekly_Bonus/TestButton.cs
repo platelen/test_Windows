@@ -17,7 +17,7 @@ namespace Weekly_Bonus
         {
             Debug.Log($"Test: {_buttonDay.name}");
 
-            GameObject rootPanel = transform.root.gameObject;
+            GameObject rootPanel = transform.parent.gameObject.transform.parent.gameObject.transform.parent.gameObject;
             rootPanel.SetActive(false);
         }
 
