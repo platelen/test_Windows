@@ -6,8 +6,8 @@ namespace Weekly_Bonus
 {
     public class DailyRewardManager : MonoBehaviour
     {
-        [SerializeField] private GameObject _panelWeeklyBonus;
-        [SerializeField] private GameObject _panelDailyBonus;
+        [SerializeField] private GameObject[] _panelsWeeklyBonus;
+        [SerializeField] private GameObject[] _panelsDailyBonus;
         [SerializeField] private Button[] _rewardButtons;
         [SerializeField] private int _maxDay = 7;
         [SerializeField] private BarDay _sliderBarDay;
@@ -17,7 +17,11 @@ namespace Weekly_Bonus
 
         private void Awake()
         {
-            _panelWeeklyBonus.SetActive(true);
+            foreach (GameObject panels in _panelsWeeklyBonus)
+            {
+                panels.SetActive(true);
+            }
+
             _sliderBarDay.SetMaxDay(_maxDay);
         }
 
@@ -36,12 +40,17 @@ namespace Weekly_Bonus
 
             if (_currentDay > 5)
             {
-                _panelWeeklyBonus.SetActive(false);
-                _panelDailyBonus.SetActive(true);
+                foreach (GameObject panels in _panelsWeeklyBonus)
+                {
+                    panels.SetActive(false);
+                }
+
+                foreach (GameObject panels in _panelsDailyBonus)
+                {
+                    panels.SetActive(true);
+                }
             }
 
-
-            Debug.Log($"Current_Day: {_currentDay}");
             _textCurrentDay.text = (_currentDay + 1).ToString();
         }
 
